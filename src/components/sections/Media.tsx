@@ -114,13 +114,12 @@ export function Media() {
                   />
                 </div>
               </div>
-
             </div>
           </div>
         </div>
 
         {/* Media Kit Download */}
-        <div className="mt-16 bg-white rounded-xl p-8 text-center shadow-sm border border-stone-200">
+        {/* <div className="mt-16 bg-white rounded-xl p-8 text-center shadow-sm border border-stone-200">
           <h3 className="text-3xl font-light text-stone-900 font-serif mb-4">
             Media Kit
           </h3>
@@ -143,7 +142,7 @@ export function Media() {
               Request Materials
             </button>
           </div>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
