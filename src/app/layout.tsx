@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     canonical: SITE_CONFIG.url,
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
+    type: "website",
+    locale: "en_US",
     url: SITE_CONFIG.url,
     title: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
     creator: SITE_CONFIG.twitterHandle,
@@ -58,28 +58,28 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: 'your-google-verification-code', // You'll need to add this when you set up Google Search Console
+    google: "6t9UAUPAkT89pBXIvgeX1NDjtvIHxCiOeFBpTWoGUlU", // You'll need to add this when you set up Google Search Console
   },
   icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
     other: [
       {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        url: '/icon.png',
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/icon.png",
       },
       {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        url: '/apple-icon.png',
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/apple-icon.png",
       },
     ],
   },
@@ -93,41 +93,41 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Chukwuemeka",
-    "alternateName": "Chukwuemeka Anyaegbunam",
-    "description": SITE_CONFIG.description,
-    "url": SITE_CONFIG.url,
-    "image": `${SITE_CONFIG.url}${SITE_CONFIG.ogImage}`,
-    "sameAs": [
+    name: "Chukwuemeka",
+    alternateName: "Chukwuemeka Anyaegbunam",
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    image: `${SITE_CONFIG.url}${SITE_CONFIG.ogImage}`,
+    sameAs: [
       "https://open.spotify.com/artist/your-spotify-id",
       "https://music.apple.com/artist/your-apple-music-id",
       "https://www.instagram.com/your-instagram",
-      "https://www.facebook.com/your-facebook"
+      "https://www.facebook.com/your-facebook",
     ],
-    "jobTitle": "Christian Musician",
-    "worksFor": {
+    jobTitle: "Christian Musician",
+    worksFor: {
       "@type": "Organization",
-      "name": "Independent Artist"
+      name: "Independent Artist",
     },
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "addressLocality": "Aberdeen",
-      "addressCountry": "Scotland"
+      addressLocality: "Aberdeen",
+      addressCountry: "Scotland",
     },
-    "nationality": "Nigerian",
-    "genre": ["Gospel", "Christian", "Worship"],
-    "album": [
+    nationality: "Nigerian",
+    genre: ["Gospel", "Christian", "Worship"],
+    album: [
       {
         "@type": "MusicAlbum",
-        "name": "His Yoke My Rest",
-        "albumProductionType": "StudioAlbum"
+        name: "His Yoke My Rest",
+        albumProductionType: "StudioAlbum",
       },
       {
         "@type": "MusicAlbum",
-        "name": "Keep Hope Alive",
-        "albumProductionType": "StudioAlbum"
-      }
-    ]
+        name: "Keep Hope Alive",
+        albumProductionType: "StudioAlbum",
+      },
+    ],
   };
 
   return (
@@ -142,9 +142,7 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
       >
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
