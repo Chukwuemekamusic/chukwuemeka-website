@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { Card, CardContent, CardHeader } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
 import pressData from "@/lib/data/press.json";
 
 export function Media() {

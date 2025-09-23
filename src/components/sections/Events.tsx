@@ -2,10 +2,7 @@
 
 import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
-import { Card, CardContent, CardHeader } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
 import eventsData from '@/lib/data/events.json';
-import type { Event } from '@/lib/utils/types';
 
 export function Events() {
   const { events } = eventsData;
@@ -25,20 +22,6 @@ export function Events() {
     };
   };
 
-  const getEventTypeStyles = (type: string) => {
-    switch (type) {
-      case 'worship':
-        return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'concert':
-        return 'bg-amber-100 text-amber-800 border-amber-200';
-      case 'festival':
-        return 'bg-green-100 text-green-800 border-green-200';
-      case 'private':
-        return 'bg-purple-100 text-purple-800 border-purple-200';
-      default:
-        return 'bg-gray-100 text-gray-800 border-gray-200';
-    }
-  };
 
   return (
     <section id="events" className="py-24 bg-stone-50/30">
@@ -54,7 +37,7 @@ export function Events() {
 
           {events && events.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-              {events.map((event: any) => {
+              {events.map((event) => {
                 const dateInfo = formatDate(event.date);
                 const startTime = new Date(event.date).toLocaleTimeString('en-US', {
                   hour: 'numeric',
