@@ -1,7 +1,25 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { SiInstagram, SiTiktok, SiFacebook } from 'react-icons/si';
+import socialLinksData from '@/lib/data/social-links.json';
 
 export function About() {
+  const { socialLinks } = socialLinksData;
+
+  const getSocialIcon = (platform: string) => {
+    switch (platform.toLowerCase()) {
+      case 'instagram': return <SiInstagram className="w-5 h-5" />;
+      case 'tiktok': return <SiTiktok className="w-5 h-5" />;
+      case 'facebook': return <SiFacebook className="w-5 h-5" />;
+      default: return null;
+    }
+  };
+
+  // Filter to only show IG, TikTok, and Facebook
+  const featuredSocials = socialLinks.filter(link =>
+    ['instagram', 'tiktok', 'facebook'].includes(link.platform.toLowerCase())
+  );
+
   return (
     <section id="about" className="py-24 bg-stone-50/30">
       <Container>
@@ -65,6 +83,27 @@ export function About() {
                   <p className="text-sm text-stone-500 mt-2">
                     — One Man in the Middle
                   </p>
+                </div>
+
+                {/* Subtle social media connection */}
+                <div className="pt-6">
+                  <p className="text-sm text-stone-600 mb-3 font-light">
+                    Connect with the community
+                  </p>
+                  <div className="flex gap-3">
+                    {featuredSocials.map((link) => (
+                      <a
+                        key={link.platform}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 bg-stone-200/50 hover:bg-amber-100 rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-105 text-stone-600 hover:text-amber-700 cursor-pointer"
+                        title={`Follow on ${link.platform}`}
+                      >
+                        {getSocialIcon(link.platform)}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

@@ -40,7 +40,7 @@ export function Header() {
             <button
               onClick={() => scrollToSection('#hero')}
               className={cn(
-                'text-2xl font-light font-serif transition-colors',
+                'text-2xl font-light font-serif transition-colors cursor-pointer',
                 isScrolled ? 'text-stone-900' : 'text-white drop-shadow-lg'
               )}
             >
@@ -55,7 +55,7 @@ export function Header() {
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
                 className={cn(
-                  'font-light transition-all duration-200 hover:scale-105',
+                  'font-light transition-all duration-200 hover:scale-105 cursor-pointer',
                   isScrolled
                     ? 'text-stone-700 hover:text-amber-600'
                     : 'text-white/90 hover:text-white drop-shadow-md'
@@ -71,7 +71,7 @@ export function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={cn(
-                'p-2 transition-colors',
+                'p-2 transition-colors cursor-pointer',
                 isScrolled
                   ? 'text-stone-700 hover:text-stone-900'
                   : 'text-white/90 hover:text-white'
@@ -108,7 +108,7 @@ export function Header() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-stone-700 hover:text-amber-600 hover:bg-stone-50 font-light transition-colors py-3 px-4 rounded-lg"
+                  className="block w-full text-left text-stone-700 hover:text-amber-600 hover:bg-stone-50 font-light transition-colors py-3 px-4 rounded-lg cursor-pointer"
                 >
                   {item.label}
                 </button>
