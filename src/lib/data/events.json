@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "st-marys-cathedral-october-2025",
+      "title": "Evening of Worship",
+      "date": "2025-10-04T19:00:00",
+      "venue": "St Mary's Cathedral, Aberdeen",
+      "location": "Aberdeen, Scotland",
+      "description": "Join us for an evening of worship and reflection through music.",
+      "image": "/images/events/Cathedral_Concert.jpg",
+      "ticketUrl": "https://stmaryscathedral.churchsuite.com/events/rst2rnet",
+      "status": "upcoming",
+      "featured": false
+    },
+    {
+      "id": "restoration-eighth-day-2025",
+      "title": "Restoration",
+      "subtitle": "Where do you find hope for all things to be made new?",
+      "date": "2025-10-12T17:00:00",
+      "endDate": "2025-10-12T19:00:00",
+      "venue": "St Mary Moorfields RC Church, London",
+      "location": "4-5 Eldon St, London EC2M 7LS",
+      "description": "An intimate evening exploring hope and restoration with Chukwuemeka as guest singer.",
+      "organizer": "Eighth Day Events",
+      "contactEmail": "events@edwinfawcett.com",
+      "image": "/images/events/Restoration.jpeg",
+      "status": "upcoming",
+      "featured": true,
+      "role": "Guest Singer",
+      "registrationRequired": true,
+      "registrationNote": "Please email events@edwinfawcett.com to register your attendance."
+    }
+  ]
+}

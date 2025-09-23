@@ -1,0 +1,104 @@
+{
+  "albums": [
+    {
+      "id": "his-yoke-my-rest",
+      "title": "His Yoke My Rest",
+      "year": 2024,
+      "description": "Inspired by Matthew 11:28-30, this album invites listeners to find true rest, trust, and identity in God. A beautiful collection that balances simple worship with profound spiritual challenges.",
+      "coverImage": "/album-covers/his-yoke-my-rest.jpg",
+      "tracks": [
+        { "id": "come-within", "title": "Come Within" },
+        { "id": "love-fills-me", "title": "Love Fills me" },
+        { "id": "hold-on", "title": "Hold On" },
+        { "id": "all-my-praise", "title": "All My Praise" },
+        { "id": "keep-me-lord", "title": "Keep Me Lord" },
+        { "id": "rain-is-coming", "title": "Rain is Coming" },
+        { "id": "just-mercy", "title": "Just Mercy" },
+        { "id": "broken", "title": "Broken" },
+        { "id": "great-mighty-father", "title": "Great and Mighty Father" },
+        { "id": "child-of-grace", "title": "Child of Grace" }
+      ],
+      "streamingLinks": {
+        "spotify": "https://open.spotify.com/album/3kwzRw4ZjobMerzgx9XUed?si=1oHmcfbgT9iyq06y2gap3Q",
+        "appleMusic": "https://music.apple.com/gb/album/his-yoke-my-rest/1778727666",
+        "youtubeMusic": "https://www.youtube.com/watch?v=uW4K3tXvHUk&list=OLAK5uy_nbrcL3kGPixPg5QfiUKeb3doUxKZuhbfs",
+        "amazon": "https://music.amazon.co.uk/albums/B0DLFMKFD5?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_AtQLIJvpBmzPNtbG9ouKcM2nl"
+      },
+      "featured": true,
+      "type": "album"
+    },
+    {
+      "id": "keep-hope-alive",
+      "title": "Keep Hope Alive",
+      "year": 2017,
+      "description": "A powerful debut album delivering messages of hope, gratitude, and worship across 14 inspiring tracks.",
+      "coverImage": "/album-covers/keep-hope-alive.jpg",
+      "tracks": [
+        { "id": "miracles", "title": "Miracles" },
+        { "id": "holy-lord", "title": "Holy Lord" },
+        { "id": "jesus-you-reign", "title": "Jesus You Reign on High" },
+        { "id": "im-grateful-lord", "title": "I'm Grateful Lord" },
+        {
+          "id": "odogwu",
+          "title": "Odogwu",
+          "featuredArtists": ["Maureen Madu"]
+        },
+        {
+          "id": "you-are-king",
+          "title": "You Are King",
+          "featuredArtists": ["Nicole Chikwe"]
+        },
+        { "id": "let-it-be-done", "title": "Let it Be Done" },
+        { "id": "take-control", "title": "Take Control" },
+        {
+          "id": "our-god-awesome",
+          "title": "Our God Is Awesome",
+          "featuredArtists": ["Nanu"]
+        },
+        {
+          "id": "birds-praise",
+          "title": "Birds' Praise",
+          "featuredArtists": ["Maureen Madu"]
+        },
+        {
+          "id": "dews-nigeria",
+          "title": "Dews on Nigeria",
+          "featuredArtists": ["Beryl"]
+        },
+        {
+          "id": "on-my-way-home",
+          "title": "On My Way Home",
+          "featuredArtists": ["Nkemjika"]
+        },
+        { "id": "search-me", "title": "Search Me O Lord" },
+        { "id": "he-awaits-me", "title": "He Awaits Me" }
+      ],
+      "streamingLinks": {
+        "spotify": "https://open.spotify.com/album/1M78yPWxkNNBliqkrQbs4Z?si=uAwhXmfVSo-Kx1rKkIl--g",
+        "appleMusic": "https://music.apple.com/gb/album/keep-hope-alive/1313900639",
+        "youtubeMusic": "https://www.youtube.com/watch?v=ZIkcQyCh_rE&list=OLAK5uy_nY12hiCknOaHKgyXnqrdnyE9zOmwOfVp8"
+      },
+      "featured": false,
+      "type": "album"
+    }
+  ],
+  "singles": [
+    {
+      "id": "i-will-live-by-faith",
+      "title": "I Will Live By Faith",
+      "year": 2020,
+      "description": "A powerful declaration of faith and trust in God's provision during uncertain times.",
+      "coverImage": "/images/I_WillLiveByFaithCoverArt",
+      "tracks": [
+        { "id": "i-will-live-by-faith", "title": "I Will Live By Faith" }
+      ],
+      "streamingLinks": {
+        "spotify": "https://open.spotify.com/album/5EargHvnctPQmzqTNniCLn?si=n4oqdOxOQ0mwhpqAEJSGBg",
+        "appleMusic": "https://music.apple.com/gb/song/i-will-live-by-faith/1523002533",
+        "youtube": "https://www.youtube.com/watch?v=Hd-HE2hbKgE&pp=ygUhIEkgd2lsbCBsaXZlIGJ5IGZhaXRoIGNodWt3dWVtZWth"
+      },
+      "featured": false,
+      "type": "single"
+    }
+  ]
+}

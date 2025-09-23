@@ -1,0 +1,42 @@
+{
+  "socialLinks": [
+    {
+      "platform": "Instagram",
+      "handle": "@chukwuemekamusic",
+      "url": "https://www.instagram.com/chukwuemekamusic/",
+      "icon": "instagram"
+    },
+    {
+      "platform": "TikTok",
+      "handle": "@chukwuemekamusic",
+      "url": "https://www.tiktok.com/@chukwuemekamusic?is_from_webapp=1&sender_device=pc",
+      "icon": "tiktok"
+    },
+    {
+      "platform": "Facebook",
+      "handle": "@chukwuemekamusic",
+      "url": "https://www.facebook.com/chukwuemekamusic",
+      "icon": "facebook"
+    }
+  ],
+  "streamingPlatforms": [
+    {
+      "platform": "Spotify",
+      "handle": "Chukwuemeka",
+      "url": "https://open.spotify.com/artist/7KO6MaT2hLl8iLbQNHKbzX?si=9SuMZgYXTRCYIsddIfRIFA",
+      "icon": "spotify"
+    },
+    {
+      "platform": "Apple Music",
+      "handle": "Chukwuemeka",
+      "url": "https://music.apple.com/gb/artist/chukwuemeka/1156663778",
+      "icon": "apple"
+    },
+    {
+      "platform": "Amazon Music",
+      "handle": "Chukwuemeka",
+      "url": "https://music.amazon.co.uk/albums/B0DLFMKFD5?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_AtQLIJvpBmzPNtbG9ouKcM2nl",
+      "icon": "amazon"
+    }
+  ]
+}

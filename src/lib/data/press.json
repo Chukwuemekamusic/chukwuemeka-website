@@ -1,0 +1,22 @@
+{
+  "pressItems": [
+    {
+      "id": "one-man-middle-review",
+      "title": "His Yoke My Rest - Album Review",
+      "publication": "One Man in the Middle",
+      "date": "2025-01-01",
+      "url": "https://onemaninthemiddle.co.uk/music/his-yoke-my-rest",
+      "excerpt": "A beautiful album which has a great balance of simple worship, challenges and just the right touch in production. Chukwuemeka creates simple, deep, and spirit-filled music that invites listeners to find true rest in God.",
+      "image": "/images/press/one-man-middle.jpg"
+    },
+    {
+      "id": "medium-vivian-review",
+      "title": "His Yoke My Rest - Personal Thoughts and Reaction",
+      "publication": "Medium",
+      "date": "2024-12-15",
+      "url": "https://medium.com/@vivianchinonyeukatu/his-yoke-my-rest-personal-thoughts-and-reaction-acfcc9c73573",
+      "excerpt": "Listening to this album felt like a soul-deep inhale. It's rich, reflective, and beautifully composed. One of the things I really appreciate most about this album is how clear and simple the messages are. There's no overproduction or overthinking—just truth wrapped in melody.",
+      "image": "/images/press/medium-review.jpg"
+    }
+  ]
+}
