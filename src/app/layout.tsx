@@ -99,10 +99,12 @@ export default function RootLayout({
     url: SITE_CONFIG.url,
     image: `${SITE_CONFIG.url}${SITE_CONFIG.ogImage}`,
     sameAs: [
-      "https://open.spotify.com/artist/your-spotify-id",
-      "https://music.apple.com/artist/your-apple-music-id",
-      "https://www.instagram.com/your-instagram",
-      "https://www.facebook.com/your-facebook",
+      "https://open.spotify.com/artist/7KO6MaT2hLl8iLbQNHKbzX",
+      "https://music.apple.com/gb/artist/chukwuemeka/1156663778",
+      "https://www.instagram.com/chukwuemekamusic/",
+      "https://www.facebook.com/chukwuemekamusic",
+      "https://www.tiktok.com/@chukwuemekamusic",
+      "https://music.amazon.co.uk/albums/B0DLFMKFD5?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_AtQLIJvpBmzPNtbG9ouKcM2nl"
     ],
     jobTitle: "Christian Musician",
     worksFor: {
