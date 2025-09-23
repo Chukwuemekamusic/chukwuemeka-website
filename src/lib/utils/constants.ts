@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   tagline: "Music that illuminates hearts with God’s love",
   description:
     "Chukwuemeka is a Nigerian-born Christian musician and psalmist based in Aberdeen, Scotland. His soulful gospel music reflects life’s fullness through Christ. Explore worship albums His Yoke My Rest and Keep Hope Alive, or book him for worship events and gospel concerts.",
-  url: "https://chukwuemekamusic.com",
+  url: "https://www.chukwuemekamusic.com",
   ogImage: "/images/hero/chukwuemeka-og.jpg",
   author: "Chukwuemeka",
   siteName: "Chukwuemeka Music",
