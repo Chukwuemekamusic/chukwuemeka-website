@@ -90,7 +90,7 @@ export function Media() {
                     src="/images/gallery/withBandMembers_2018.jpg"
                     alt="Chukwuemeka with band members 2018"
                     fill
-                    className="object-cover"
+                    className="object-cover object-left-top"
                   />
                 </div>
               </div>
