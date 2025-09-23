@@ -12,7 +12,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

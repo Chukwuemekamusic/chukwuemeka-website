@@ -142,7 +142,7 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
       >
         <Header />
-        <main className="pt-16">
+        <main>
           {children}
         </main>
         <Footer />

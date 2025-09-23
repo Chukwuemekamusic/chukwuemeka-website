@@ -1,12 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container } from '@/components/ui/Container';
 import { NAVIGATION_ITEMS } from '@/lib/utils/constants';
 import { cn } from '@/lib/utils';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -17,14 +27,25 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <header className={cn(
+      'fixed top-0 w-full z-50 transition-all duration-300',
+      isScrolled
+        ? 'bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm'
+        : 'bg-transparent'
+    )}>
       <Container>
         <div className="flex items-center justify-between h-16">
           {/* Logo/Name */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-gray-900">
+            <button
+              onClick={() => scrollToSection('#hero')}
+              className={cn(
+                'text-2xl font-light font-serif transition-colors',
+                isScrolled ? 'text-stone-900' : 'text-white drop-shadow-lg'
+              )}
+            >
               Chukwuemeka
-            </h1>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -33,7 +54,12 @@ export function Header() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                className={cn(
+                  'font-light transition-all duration-200 hover:scale-105',
+                  isScrolled
+                    ? 'text-stone-700 hover:text-amber-600'
+                    : 'text-white/90 hover:text-white drop-shadow-md'
+                )}
               >
                 {item.label}
               </button>
@@ -44,7 +70,12 @@ export function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-gray-900 p-2"
+              className={cn(
+                'p-2 transition-colors',
+                isScrolled
+                  ? 'text-stone-700 hover:text-stone-900'
+                  : 'text-white/90 hover:text-white'
+              )}
               aria-label="Toggle menu"
             >
               <svg
@@ -68,20 +99,22 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <div className={cn(
-          'md:hidden transition-all duration-200 ease-in-out',
-          isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          'md:hidden transition-all duration-300 ease-in-out',
+          isMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         )}>
-          <nav className="py-4 space-y-4">
-            {NAVIGATION_ITEMS.map((item) => (
-              <button
-                key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left text-gray-600 hover:text-blue-600 font-medium transition-colors py-2"
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
+          <div className="bg-white/95 backdrop-blur-md border-t border-stone-200 shadow-lg">
+            <nav className="py-6 space-y-2">
+              {NAVIGATION_ITEMS.map((item) => (
+                <button
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left text-stone-700 hover:text-amber-600 hover:bg-stone-50 font-light transition-colors py-3 px-4 rounded-lg"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+          </div>
         </div>
       </Container>
     </header>
