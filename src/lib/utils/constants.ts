@@ -36,7 +36,7 @@ export const SITE_CONFIG = {
 export const NAVIGATION_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Music", href: "#music" },
-  { label: "Events", href: "#events" },
+  // { label: "Events", href: "#events" },
   { label: "Media", href: "#media" },
   { label: "Connect", href: "#connect" },
 ];
