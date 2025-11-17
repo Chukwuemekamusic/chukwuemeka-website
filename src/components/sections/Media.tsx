@@ -15,18 +15,18 @@ export function Media() {
             <h2 className="text-4xl font-light text-stone-900 mb-6 font-serif">
               Media
             </h2>
-            <p className="text-lg text-stone-600 font-light max-w-2xl mx-auto">
+            {/* <p className="text-lg text-stone-600 font-light max-w-2xl mx-auto">
               Photos, press coverage, and behind-the-scenes glimpses into
               Chukwuemeka&apos;s musical journey and ministry.
-            </p>
+            </p> */}
           </div>
 
           {/* Press Coverage */}
           {pressItems && pressItems.length > 0 && (
             <div>
-              <h3 className="text-3xl font-light text-stone-900 font-serif mb-8">
+              {/* <h3 className="text-3xl font-light text-stone-900 font-serif mb-8">
                 Press Coverage
-              </h3>
+              </h3> */}
 
               <div className="space-y-6">
                 {pressItems.map((item) => (
