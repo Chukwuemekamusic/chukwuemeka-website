@@ -54,8 +54,8 @@ export function About() {
 
               <div className="space-y-6 text-stone-700 leading-relaxed">
                 <p className="">
-                  Hi, I&apos;m Chukwuemeka, a singer-songwriter reflecting on
-                  life in its fullness through the lens of God&apos;s love.
+                  Hi, I am Chukwuemeka, a singer-songwriter reflecting on life
+                  in its fullness through the lens of God&apos;s love.
                 </p>
 
                 <p>
