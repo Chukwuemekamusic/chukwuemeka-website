@@ -53,9 +53,9 @@ export function About() {
               </div>
 
               <div className="space-y-6 text-stone-700 leading-relaxed">
-                <p className="text-lg font-medium">
-                  Hi, I&apos;m Chukwuemeka, a faith-driven artist reflecting on life
-                  in its fullness through God&apos;s lens.
+                <p className="">
+                  Hi, I&apos;m Chukwuemeka, a singer-songwriter reflecting on
+                  life in its fullness through the lens of God&apos;s love.
                 </p>
 
                 <p>
