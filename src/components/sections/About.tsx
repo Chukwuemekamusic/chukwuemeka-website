@@ -54,7 +54,7 @@ export function About() {
 
               <div className="space-y-6 text-stone-700 leading-relaxed">
                 <p className="text-lg font-medium">
-                  Hi, I’m Chukwuemeka — a faith-driven artist reflecting on life
+                  Hi, I'm Chukwuemeka, a faith-driven artist reflecting on life
                   in its fullness through God&apos;s lens.
                 </p>
 
@@ -67,26 +67,21 @@ export function About() {
                 <p>
                   My songs hold space for both beauty and struggle, telling
                   stories of vulnerability, growth, and the quiet strength found
-                  in God’s presence—rooted in faith, yet reaching people
+                  in God's presence, rooted in faith, yet reaching people
                   wherever they are, with reflection, hope, and meaning.
                 </p>
 
                 <p>
                   Drawing from classical, jazz, and worship influences, my sound
-                  is simple, deep, and spirit-filled — always seeking to
-                  connect, uplift, and bring a sense of peace.
-                </p>
-
-                <p className="text-stone-600">
-                  I hope the words, melodies, and heart behind my music meet you
-                  where you are.
+                  is simple, deep, and spirit-filled—seeking to connect, uplift,
+                  and bring a sense of peace.
                 </p>
 
                 {/* Subtle review integration */}
                 <div className="pt-4 border-l-2 border-yellow-200 pl-6">
                   <p className="text-stone-600 italic">
-                    &quot;A beautiful album which has a great balance of simple
-                    worship, challenges and just the right touch in
+                    &quot;A beautiful album with a great balance of simple
+                    worship, thoughtful depth, and just the right touch in
                     production.&quot;
                   </p>
                   <p className="text-sm text-stone-500 mt-2">
