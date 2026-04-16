@@ -1,23 +1,27 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { SiInstagram, SiTiktok, SiFacebook } from 'react-icons/si';
-import socialLinksData from '@/lib/data/social-links.json';
+import { SiInstagram, SiTiktok, SiFacebook } from "react-icons/si";
+import socialLinksData from "@/lib/data/social-links.json";
 
 export function About() {
   const { socialLinks } = socialLinksData;
 
   const getSocialIcon = (platform: string) => {
     switch (platform.toLowerCase()) {
-      case 'instagram': return <SiInstagram className="w-5 h-5" />;
-      case 'tiktok': return <SiTiktok className="w-5 h-5" />;
-      case 'facebook': return <SiFacebook className="w-5 h-5" />;
-      default: return null;
+      case "instagram":
+        return <SiInstagram className="w-5 h-5" />;
+      case "tiktok":
+        return <SiTiktok className="w-5 h-5" />;
+      case "facebook":
+        return <SiFacebook className="w-5 h-5" />;
+      default:
+        return null;
     }
   };
 
   // Filter to only show IG, TikTok, and Facebook
-  const featuredSocials = socialLinks.filter(link =>
-    ['instagram', 'tiktok', 'facebook'].includes(link.platform.toLowerCase())
+  const featuredSocials = socialLinks.filter((link) =>
+    ["instagram", "tiktok", "facebook"].includes(link.platform.toLowerCase()),
   );
 
   return (
@@ -49,28 +53,33 @@ export function About() {
               </div>
 
               <div className="space-y-6 text-stone-700 leading-relaxed">
-                <p className="text-lg font-light">
-                  A Christian psalmist reflecting on life in its fullness
-                  through God&apos;s lens.
+                <p className="text-lg font-medium">
+                  Hi, I’m Chukwuemeka — a faith-driven artist reflecting on life
+                  in its fullness through God&apos;s lens.
                 </p>
 
                 <p>
-                  Born in Nigeria and based in Aberdeen, Scotland, Chukwuemeka
-                  creates music that illuminates hearts and minds with the love
-                  of God.
+                  Born in Nigeria and based in Aberdeen, Scotland, I create
+                  music shaped by faith, lived experience, and a quiet refusal
+                  to look away from the hard and beautiful parts of life.
                 </p>
 
                 <p>
-                  Through songs that embrace both beauty and struggle, he shares
-                  a journey of honest vulnerability that always finds strength
-                  in God&apos;s unfailing provision.
+                  My songs hold space for both beauty and struggle, telling
+                  stories of vulnerability, growth, and the quiet strength found
+                  in God’s presence—rooted in faith, yet reaching people
+                  wherever they are, with reflection, hope, and meaning.
                 </p>
 
                 <p>
-                  Drawing from classical, jazz, and worship influences, his
-                  &quot;simple, deep, and spirit-filled&quot; music appeals to
-                  everyone seeking life&apos;s deeper meaning, creating bridges
-                  through hope and peace.
+                  Drawing from classical, jazz, and worship influences, my sound
+                  is simple, deep, and spirit-filled — always seeking to
+                  connect, uplift, and bring a sense of peace.
+                </p>
+
+                <p className="text-stone-600">
+                  I hope the words, melodies, and heart behind my music meet you
+                  where you are.
                 </p>
 
                 {/* Subtle review integration */}
