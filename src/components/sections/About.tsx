@@ -54,7 +54,7 @@ export function About() {
 
               <div className="space-y-6 text-stone-700 leading-relaxed">
                 <p className="text-lg font-medium">
-                  Hi, I'm Chukwuemeka, a faith-driven artist reflecting on life
+                  Hi, I&apos;m Chukwuemeka, a faith-driven artist reflecting on life
                   in its fullness through God&apos;s lens.
                 </p>
 
@@ -67,7 +67,7 @@ export function About() {
                 <p>
                   My songs hold space for both beauty and struggle, telling
                   stories of vulnerability, growth, and the quiet strength found
-                  in God's presence, rooted in faith, yet reaching people
+                  in God&apos;s presence, rooted in faith, yet reaching people
                   wherever they are, with reflection, hope, and meaning.
                 </p>
 
